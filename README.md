@@ -13,3 +13,7 @@ A simple to add app done in python-flask
       Or <br>
 
     `python3 app.py # in unix Systems`
+
+## :rotating_light: LICENCE
+
+This project is licensed under [MIT](https://billyokeyo.mit-license.org/) licence.
