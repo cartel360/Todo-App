@@ -1,13 +1,13 @@
 # Todo-App
 A simple to add app done in python-flask
 
-Create a virtual environment
+1. Create a virtual environment
   `python3 -m venv venv`
-Update pip to the latest version
+2. Update pip to the latest version
   `pip install --upgrade pip`
-Install dependencies(requirements).
+3. Install dependencies(requirements).
   `pip install -r requirements.txt`
-Run
+4. Run
   `python app.py # in windows`
 
   Or
