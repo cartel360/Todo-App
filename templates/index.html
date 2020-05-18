@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+<h1> To Do App </h1>
+
+{% block content %}
+<center>
+    <div class="content">
+        <h1> To Do Tasks </h1>
+        <table class="table table-hover" style="width:50%;">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col"> Task </th>
+                    <th scope="col"> Date </th>
+                    <th scope="col"> Action </th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for task in tasks %}
+                <tr>
+                    <td> {{ task.content }}</td>
+                    <td> {{ task.date_created.date() }} </td>
+                    <td>
+                        <a href="/done/{{ task.id }}">Done</a>
+                        <br>
+                        <a href="/update/{{task.id}}">Update</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <br>
+        <form action="/" method="POST">
+            <input type="text" placeholder="Add task" id="content" name="content">
+            <input type="submit" value="Save Task">
+        </form>
+    </div>
+</center>
+{% endblock content %}
